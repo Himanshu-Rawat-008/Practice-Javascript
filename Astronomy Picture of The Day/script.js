@@ -8,7 +8,14 @@ function displayImage(data){
 	}).appendTo('#image-container');
 }
 $.ajax({
-	url:"https://api.nasa.gov/planetary/apod?api_key=vaEsaPmOKEQdwiVDjcCpZfJHdbZNqRZFVTV4JNQ2&date=2020-07-25",
+	// url:"https://api.nasa.gov/planetary/apod?api_key=vaEsaPmOKEQdwiVDjcCpZfJHdbZNqRZFVTV4JNQ2&date=2020-07-25",
+	url:"https://api.nasa.gov/planetary/apod",
 	method: 'GET',
-	success: displayImage
+	success: displayImage,
+	// we can pass key & date as attribute becoz get method
+	// can automatically convert it into query parameter
+	data:{
+		api_key:"vaEsaPmOKEQdwiVDjcCpZfJHdbZNqRZFVTV4JNQ2",
+		date:"2020-07-25",
+	}
 })
