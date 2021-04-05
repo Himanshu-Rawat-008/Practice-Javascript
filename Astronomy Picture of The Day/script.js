@@ -8,7 +8,7 @@ function displayImage(data){
 	}).appendTo('#image-container');
 }
 $.ajax({
-	url:"https://api.nasa.gov/planetary/apod?api_key=vaEsaPmOKEQdwiVDjcCpZfJHdbZNqRZFVTV4JNQ2",
+	url:"https://api.nasa.gov/planetary/apod?api_key=vaEsaPmOKEQdwiVDjcCpZfJHdbZNqRZFVTV4JNQ2&date=2020-07-25",
 	method: 'GET',
 	success: displayImage
 })
