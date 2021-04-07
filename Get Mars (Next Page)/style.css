@@ -1,0 +1,33 @@
+#container{
+	width: 100%;
+	height: 200px;
+	background-image: linear-gradient(to right, lightblue, lightpink);
+}
+#sol{
+	width: 200px;
+	height: 50px;
+	margin: 5%;
+}
+#row {
+	margin: 5%;
+}
+#row img{
+	max-height: 300px;
+	max-width: 300px;
+	margin: 5%;
+}
+#submit{
+	width: 100px;
+	background: darkgrey;
+}
+#page{
+	width: 100%;
+	height: 100px;
+	background-color: lightgrey;
+}
+#page div{
+	margin: 200px;
+	width:100px;
+	height: 50px;
+	background-color: darkgrey;
+}
