@@ -10,9 +10,11 @@ function displayImage(data){
 	// 	height:'100%',
 	// }).appendTo('#image-container');
 
-	 var img = $(document.createElement('img'));
-	 img.attr('src', data.url);
-	 img.appendTo('#image-container');
+	 $(document.createElement('img')).attr('src', data.url).appendTo('#image-container');
+
+	 // Alternative
+	 // $('#image-container').append();
+
 }
 $.ajax({
 	// url:"https://api.nasa.gov/planetary/apod?api_key=vaEsaPmOKEQdwiVDjcCpZfJHdbZNqRZFVTV4JNQ2&date=2020-07-25",
