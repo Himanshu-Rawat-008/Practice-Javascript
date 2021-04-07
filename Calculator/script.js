@@ -27,6 +27,13 @@ for(var i=0;i<buttons.length;i++)
 		}
 		else if(value == '%'||value == '/'||value == '*'||value == '-'||value == '+'||value == '.')
 		{
+			if( value == '/' && operand2 == 0)
+			{
+				display.innerText="Error";
+				operand1 =0;
+				operand2 = null;
+				operator = null;
+			}
 			if(operand2!=null)
 				{
 					operand1 = eval(operand1+' '+operator+' '+operand2);
