@@ -1,0 +1,38 @@
+
+#calculator{
+	margin-top: 10%;
+	margin-left: 10%;
+	width: 400px;
+	height: 350px;
+	background:grey;
+}
+#calculator , div{
+	border: 1px solid black;
+}
+#display-container{
+	background: linear-gradient(to right, lightyellow, lightgreen);
+}
+#display-container,.button{
+	width: 100%;
+	height: 75px;
+	margin-bottom: 1%;
+}
+span{
+	position: relative;
+	top: 20%;
+	font-size: 20px;
+}
+.button{
+	background: linear-gradient(to right, lightpink, lightblue);
+	height: 50px;
+	text-align: center;
+	width: 24%;
+	display: inline-block;
+}
+#display{
+	position: relative;
+	float: right;
+	margin: 0;	
+	color:blue;
+	font-size: 50px;
+}
