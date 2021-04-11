@@ -1,0 +1,10 @@
+body{
+	margin: 0px;
+}
+#box{
+	position: relative;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+}
